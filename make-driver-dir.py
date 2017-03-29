@@ -85,7 +85,7 @@ def _update_copymap_for_driver(input_dir, ostuple, drivername, copymap):
             filelist = filemap.FILELISTS.get(drivername)
 
         for pattern in filelist:
-            files = glob.glob(os.path.join(input_dir, ostuple, pattern))
+            files = glob.glob(os.path.join(input_dir, drivername, "Install", ostuple, pattern))
             if not files:
                 strpattern = os.path.join(ostuple, pattern)
                 if strpattern not in missing_patterns:
@@ -110,16 +110,18 @@ def copy_virtio_drivers(input_dir, outdir):
 
         ostuple = dirpath[len(input_dir) + 1:]
         if ostuple not in alldirs:
-            alldirs.append(ostuple)
+            alldirs.append(ostuple.lower())
 
     drivers = filemap.DRIVER_OS_MAP.keys()[:]
     copymap = {}
     missing_patterns = []
     for drivername in drivers:
         for ostuple in sorted(filemap.DRIVER_OS_MAP[drivername]):
-            if ostuple not in alldirs:
+            os_type, arch = ostuple.split('/')
+            fullpath = os.path.join(drivername, "Install", os_type, arch).lower()
+            if fullpath not in alldirs:
                 fail("driver=%s ostuple=%s not found in input=%s" %
-                     (drivername, ostuple, input_dir))
+                     (drivername, fullpath, input_dir))
 
             # We know that the ostuple dir contains bits for this driver,
             # figure out what files we want to copy.
@@ -270,12 +272,12 @@ def main():
     # Actually move the files
     seenfiles = []
     seenfiles += copy_virtio_drivers(options.input_dir, outdir)
-    seenfiles += download_virtio_win_license(outdir)
-    seenfiles += copy_inf_cat_driver(options.input_dir, outdir, "qemupciserial")
-    seenfiles += copy_inf_cat_driver(options.input_dir, outdir, "qemufwcfg")
+#    seenfiles += download_virtio_win_license(outdir)
+#    seenfiles += copy_inf_cat_driver(options.input_dir, outdir, "qemupciserial")
+#    seenfiles += copy_inf_cat_driver(options.input_dir, outdir, "qemufwcfg")
 
     # Verify that there is nothing left over that we missed
-    check_remaining_files(options.input_dir, seenfiles)
+#    check_remaining_files(options.input_dir, seenfiles)
 
     print "Generated %s" % outdir
     return 0

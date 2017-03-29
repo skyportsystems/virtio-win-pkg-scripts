@@ -181,158 +181,158 @@ FILELISTS['viostor'] = [
 #        output-dir/2k3/x86
 DRIVER_OS_MAP = {
     'Balloon': {
-        'Wxp/x86': ['xp/x86'],
-
-        'Wnet/x86' : ['2k3/x86'],
-        'Wnet/amd64': ['2k3/amd64'],
-
-        'Wlh/x86': ['2k8/x86'],
-        'Wlh/amd64': ['2k8/amd64'],
-
-        'Win7/x86': ['w7/x86'],
+#        'Wxp/x86': ['xp/x86'],
+#
+#        'Wnet/x86' : ['2k3/x86'],
+#        'Wnet/amd64': ['2k3/amd64'],
+#
+#        'Wlh/x86': ['2k8/x86'],
+#        'Wlh/amd64': ['2k8/amd64'],
+#
+#        'Win7/x86': ['w7/x86'],
         'Win7/amd64': ['w7/amd64', '2k8R2/amd64'],
-
-        'Win8/x86': ['w8/x86', 'w8.1/x86'],
+#
+#        'Win8/x86': ['w8/x86', 'w8.1/x86'],
         'Win8/amd64': ['w8/amd64', 'w8.1/amd64', '2k12/amd64', '2k12R2/amd64'],
-
-        'Win10/x86': ['w10/x86'],
+#
+#        'Win10/x86': ['w10/x86'],
         'Win10/amd64': ['w10/amd64', '2k16/amd64'],
     },
 
 
     'NetKVM': {
-        'Wxp/x86': ['xp/x86'],
-
-        'Wnet/x86' : ['2k3/x86'],
-        'Wnet/amd64': ['2k3/amd64'],
-
-        'Wlh/x86': ['2k8/x86'],
-        'Wlh/amd64': ['2k8/amd64'],
-
-        'Win7/x86': ['w7/x86'],
+#        'Wxp/x86': ['xp/x86'],
+#
+#        'Wnet/x86' : ['2k3/x86'],
+#        'Wnet/amd64': ['2k3/amd64'],
+#
+#        'Wlh/x86': ['2k8/x86'],
+#        'Wlh/amd64': ['2k8/amd64'],
+#
+#        'Win7/x86': ['w7/x86'],
         'Win7/amd64': ['2k8R2/amd64', 'w7/amd64'],
-
-        'Win8/x86': ['w8/x86'],
+#
+#        'Win8/x86': ['w8/x86'],
         'Win8/amd64': ['w8/amd64', '2k12/amd64'],
-
-        'Win8.1/x86': ['w8.1/x86'],
-        'Win8.1/amd64': ['w8.1/amd64', '2k12R2/amd64'],
-
-        'Win10/x86': ['w10/x86'],
+#
+#        'Win8.1/x86': ['w8.1/x86'],
+#        'Win8.1/amd64': ['w8.1/amd64', '2k12R2/amd64'],
+#
+#        'Win10/x86': ['w10/x86'],
         'Win10/amd64': ['w10/amd64', '2k16/amd64'],
     },
 
 
     'pvpanic': {
-        'Wlh/x86': ['2k8/x86'],
-        'Wlh/amd64': ['2k8/amd64'],
-
-        'Win7/x86': ['w7/x86'],
+#        'Wlh/x86': ['2k8/x86'],
+#        'Wlh/amd64': ['2k8/amd64'],
+#
+#        'Win7/x86': ['w7/x86'],
         'Win7/amd64': ['w7/amd64', '2k8R2/amd64'],
-
-        'Win8/x86': ['w8/x86', 'w8.1/x86'],
+#
+#        'Win8/x86': ['w8/x86', 'w8.1/x86'],
         'Win8/amd64': ['w8/amd64', 'w8.1/amd64', '2k12/amd64', '2k12R2/amd64'],
-
-        'Win10/x86': ['w10/x86'],
+#
+#        'Win10/x86': ['w10/x86'],
         'Win10/amd64': ['w10/amd64', '2k16/amd64'],
     },
 
 
-    'qxl': {
-        'xp/x86': ['xp/x86'],
-
-        'w7/x86': ['w7/x86'],
-        'w7/amd64': ['w7/amd64'],
-
-        '2k8R2/amd64': ['2k8R2/amd64'],
-    },
-
-
-    'qxldod': {
-        "Win8/x86": ["w8/x86", "w8.1/x86", 'w10/x86'],
-        'Win8/x64': ['w8/amd64', 'w8.1/amd64', '2k12/amd64', '2k12R2/amd64',
-                     'w10/amd64'],
-    },
-
-
-    'vioinput': {
-        'Win7/x86': ['w7/x86'],
-        'Win7/amd64': ['w7/amd64', '2k8R2/amd64'],
-
-        'Win8/x86': ['w8/x86', 'w8.1/x86'],
-        'Win8/amd64': ['w8/amd64', 'w8.1/amd64', '2k12/amd64', '2k12R2/amd64'],
-
-        'Win10/x86': ['w10/x86'],
-        'Win10/amd64': ['w10/amd64', '2k16/amd64'],
-    },
+#    'qxl': {
+#        'xp/x86': ['xp/x86'],
+#
+#        'w7/x86': ['w7/x86'],
+#        'w7/amd64': ['w7/amd64'],
+#
+#        '2k8R2/amd64': ['2k8R2/amd64'],
+#    },
+#
+#
+#    'qxldod': {
+#        "Win8/x86": ["w8/x86", "w8.1/x86", 'w10/x86'],
+#        'Win8/x64': ['w8/amd64', 'w8.1/amd64', '2k12/amd64', '2k12R2/amd64',
+#                     'w10/amd64'],
+#    },
+#
+#
+#    'vioinput': {
+#        'Win7/x86': ['w7/x86'],
+#        'Win7/amd64': ['w7/amd64', '2k8R2/amd64'],
+#
+#        'Win8/x86': ['w8/x86', 'w8.1/x86'],
+#        'Win8/amd64': ['w8/amd64', 'w8.1/amd64', '2k12/amd64', '2k12R2/amd64'],
+#
+#        'Win10/x86': ['w10/x86'],
+#        'Win10/amd64': ['w10/amd64', '2k16/amd64'],
+#    },
 
 
     'viorng': {
-        'Wlh/x86': ['2k8/x86'],
-        'Wlh/amd64': ['2k8/amd64'],
-
-        'Win7/x86': ['w7/x86'],
+#        'Wlh/x86': ['2k8/x86'],
+#        'Wlh/amd64': ['2k8/amd64'],
+#
+#        'Win7/x86': ['w7/x86'],
         'Win7/amd64': ['w7/amd64', '2k8R2/amd64'],
-
-        'Win8/x86': ['w8/x86', 'w8.1/x86'],
+#
+#        'Win8/x86': ['w8/x86', 'w8.1/x86'],
         'Win8/amd64': ['w8/amd64', 'w8.1/amd64', '2k12/amd64', '2k12R2/amd64'],
-
-        'Win10/x86': ['w10/x86'],
+#
+#        'Win10/x86': ['w10/x86'],
         'Win10/amd64': ['w10/amd64', '2k16/amd64'],
     },
 
 
     'vioscsi': {
-        'Wlh/x86': ['2k8/x86'],
-        'Wlh/amd64': ['2k8/amd64'],
-
-        'Win7/x86': ['w7/x86'],
+#        'Wlh/x86': ['2k8/x86'],
+#        'Wlh/amd64': ['2k8/amd64'],
+#
+#        'Win7/x86': ['w7/x86'],
         'Win7/amd64': ['w7/amd64', '2k8R2/amd64'],
-
-        'Win8/x86': ['w8/x86', 'w8.1/x86'],
+#
+#        'Win8/x86': ['w8/x86', 'w8.1/x86'],
         'Win8/amd64': ['w8/amd64', 'w8.1/amd64', '2k12/amd64', '2k12R2/amd64'],
-
-        'Win10/x86': ['w10/x86'],
+#
+#        'Win10/x86': ['w10/x86'],
         'Win10/amd64': ['w10/amd64', '2k16/amd64'],
     },
 
 
     'vioserial': {
-        'Wxp/x86': ['xp/x86'],
-
-        'Wnet/x86' : ['2k3/x86'],
-        'Wnet/amd64': ['2k3/amd64'],
-
-        'Wlh/x86': ['2k8/x86'],
-        'Wlh/amd64': ['2k8/amd64'],
-
-        'Win7/x86': ['w7/x86'],
+#        'Wxp/x86': ['xp/x86'],
+#
+#        'Wnet/x86' : ['2k3/x86'],
+#        'Wnet/amd64': ['2k3/amd64'],
+#
+#        'Wlh/x86': ['2k8/x86'],
+#        'Wlh/amd64': ['2k8/amd64'],
+#
+#        'Win7/x86': ['w7/x86'],
         'Win7/amd64': ['w7/amd64', '2k8R2/amd64'],
-
-        'Win8/x86': ['w8/x86', 'w8.1/x86'],
+#
+#        'Win8/x86': ['w8/x86', 'w8.1/x86'],
         'Win8/amd64': ['w8/amd64', 'w8.1/amd64', '2k12/amd64', '2k12R2/amd64'],
-
-        'Win10/x86': ['w10/x86'],
+#
+#        'Win10/x86': ['w10/x86'],
         'Win10/amd64': ['w10/amd64', '2k16/amd64'],
     },
 
 
     'viostor': {
-        'Wxp/x86': ['xp/x86'],
-
-        'Wnet/x86': ['2k3/x86'],
-        'Wnet/amd64': ['2k3/amd64'],
-
-        'Wlh/x86': ['2k8/x86'],
-        'Wlh/amd64': ['2k8/amd64'],
-
-        'Win7/x86': ['w7/x86'],
+#        'Wxp/x86': ['xp/x86'],
+#
+#        'Wnet/x86': ['2k3/x86'],
+#        'Wnet/amd64': ['2k3/amd64'],
+#
+#        'Wlh/x86': ['2k8/x86'],
+#        'Wlh/amd64': ['2k8/amd64'],
+#
+#        'Win7/x86': ['w7/x86'],
         'Win7/amd64': ['w7/amd64', '2k8R2/amd64'],
-
-        'Win8/x86': ['w8/x86', 'w8.1/x86'],
+#
+#        'Win8/x86': ['w8/x86', 'w8.1/x86'],
         'Win8/amd64': ['w8/amd64', 'w8.1/amd64', '2k12/amd64', '2k12R2/amd64'],
-
-        'Win10/x86': ['w10/x86'],
+#
+#        'Win10/x86': ['w10/x86'],
         'Win10/amd64': ['w10/amd64', '2k16/amd64'],
     },
 }
